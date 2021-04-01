@@ -22,3 +22,12 @@ nav ul a{
 #navlist a:hover{
     color: skyblue;
 }
+hr{
+    width: 100px;
+    text-align: left;
+    margin-left: 0px;
+}
+.intro{
+    color: white;
+    font-size: xx-large;
+}
