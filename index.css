@@ -1,0 +1,24 @@
+body{
+    background-color: rgb(59, 59, 134);
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+}
+nav li{
+    list-style: none;
+    display: inline;
+    font-size: 12pt;
+    padding: 20px;
+}
+nav ul a{
+    text-decoration: none;
+    color:navy;
+}
+#navlist{
+    float: right;
+}
+#navlist a:hover{
+    color: skyblue;
+}
