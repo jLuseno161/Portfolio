@@ -9,15 +9,18 @@ header{
     display: flex;
     justify-content: space-around;
     background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 nav li{
     list-style: none;
     display: inline;
-    font-size: 12pt;
-    padding: 20px;
+    padding: 15px;
 }
-nav ul a{
+nav ul a,.myname{
     text-decoration: none;
+    font-weight: 600;
+    font-size: 13pt;
     color:navy;
 }
 #navlist{
@@ -62,6 +65,10 @@ hr{
 #description{
     font-size: x-large;
 }
+#contact{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 .contactImg {
     text-align: center;
     position: relative;
@@ -82,7 +89,7 @@ img {
     height: auto;
 }
 .form{
-    width: 50%;
+    width: 970px;
     padding: 30px;
     margin: auto;
     background-color: whitesmoke;
@@ -120,22 +127,58 @@ label{
     text-align: left;
 }
 #btn{
-    margin-right: 20px;
+    margin-right: 10px;
     background-color: navy;
     color: white;
     font-size: 12pt;
 }
 #buttons{
-    width: 50%;
+    width: 60%;
 }
-@media screen and (max-width: 700px) {
+@media screen and (min-width:850px){
+    header{
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    #navlist a,.myname{
+        font-size: 16pt;
+    }
+    #buttons{
+        width: 65%;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .profilePhoto{
+        width: 300px;  
+        height: 300px;  
+        margin:0 auto;
+    }
+    .intro h1{
+        font-size: 40pt;
+    }
     .form{
-        width: 100%; 
-        padding: 0px;
-        padding-top: 50px;
+        width: 80%; 
+        margin: auto;
+        padding: 30px;
     }
     #buttons{
         width: 70%;
     }
 }
+@media screen and (max-width: 700px) {
+    #navlist a,.myname{
+        font-size: 12pt;
+    }
+    nav li{
+        padding: 10px;
+    }
+    .form{
+        width: 85%; 
+        margin: auto;
+    }
+    #buttons{
+        width: 70%;
+    }
+}
+
 
