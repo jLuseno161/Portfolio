@@ -27,7 +27,21 @@ hr{
     text-align: left;
     margin-left: 0px;
 }
+#welcome_text{
+    font-size: 16pt;
+}
 .intro{
     color: white;
-    font-size: xx-large;
+    width: 60%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 200px;
+}
+.intro h1{
+    font-size: 54pt;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#description{
+    font-size: x-large;
 }
