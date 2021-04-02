@@ -67,6 +67,7 @@ hr{
 }
 #portfolio{
     color: white;
+    padding-bottom: 100px;
 }
 .projects{
     margin: auto;
@@ -99,7 +100,7 @@ hr{
 #about p{
     font-size: 13pt;
 }
-#about h1{
+#about h1, #portfolio h1{
     font-size: 40pt;
 }
 #contact{
