@@ -191,6 +191,16 @@ label{
         flex-direction: column;
         width: 80%;
     }
+    #about{
+        flex-direction: column;
+    }
+    .aboutHead{
+        width: 100%;
+    }
+    .aboutContent{
+        width: 100%;
+        text-align: justify;
+    }
 }
 @media screen and (max-width: 1200px) {
     .profilePhoto{
