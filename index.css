@@ -1,5 +1,4 @@
 body {
-    background-color: navy;
     margin: 0 auto;
     max-width: 100%;
     overflow-x: hidden;
@@ -38,6 +37,7 @@ nav ul a,
 
 hr {
     width: 120px;
+    border-color: rgb(64, 224, 211);
 }
 
 #welcome_text {
@@ -46,9 +46,19 @@ hr {
 
 #home {
     text-align: center;
-    margin-top: 150px;
-    margin-bottom: 100px;
+    background-image: url('images/bg1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+#overlay {
+    padding-top: 120px;
+    padding-bottom: 80px;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(36, 32, 32, 0.5);
+}
+
 
 .profilePhoto {
     width: 400px;
@@ -81,8 +91,8 @@ hr {
 }
 
 #portfolio {
-    color: white;
     padding-bottom: 100px;
+    background-color: white;
 }
 
 .projects {
@@ -90,18 +100,23 @@ hr {
     display: flex;
     width: 80%;
 }
+.project h3{
+    color: teal;
+}
 
 .project {
-    box-shadow: 0px 0px 5px whitesmoke;
+    box-shadow: 0px 0px 25px gainsboro;
     text-align: left;
     flex: 1;
-    padding: 10px;
+    padding: 15px;
     padding-bottom: 35px;
     margin: 5px;
     position: relative;
 }
 
-#viewLink, #viewLink:hover, #viewLink:visited {
+#viewLink,
+#viewLink:hover,
+#viewLink:visited {
     color: white;
     border: 1px solid;
     padding: 8px;
@@ -110,14 +125,18 @@ hr {
     padding-top: 10px;
     font-weight: 600;
     bottom: 2px;
+    border-radius: 5px;
+    background-color: #364f6b ;
 }
 
 #about {
     display: flex;
     margin: 0 auto;
     width: 80%;
-    color: white;
     justify-content: space-between;
+    background-color: rgb(231, 247, 245);
+    box-sizing: border-box;
+    padding: 20px;
 }
 
 .aboutHead {
@@ -125,7 +144,9 @@ hr {
     flex: 1;
     padding-right: 10px;
 }
-
+.aboutHead p{
+    font-style: italic;
+}
 .aboutContent {
     width: 55%;
     text-align: justify;
@@ -138,6 +159,8 @@ hr {
 #about h1,
 #portfolio h1 {
     font-size: 40pt;
+    font-weight:700;
+    color: #364f6b;
 }
 
 #contact {
