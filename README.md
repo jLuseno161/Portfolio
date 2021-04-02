@@ -4,7 +4,7 @@
 Joy L. Kolia
 
 ## Description
-A brief representation about me; who i am, what i do and why i do it.
+A brief description of me; who i am, what i do and why i do it.
 
 ### Prerequisites
 
