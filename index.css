@@ -1,112 +1,150 @@
-body{
-    background-color:navy;
+body {
+    background-color: navy;
     margin: 0 auto;
     max-width: 100%;
     overflow-x: hidden;
     text-align: center;
 }
-header{
+
+header {
     display: flex;
     justify-content: space-around;
     background-color: white;
     padding-top: 20px;
     padding-bottom: 20px;
 }
-nav li{
+
+nav li {
     list-style: none;
     display: inline;
     padding: 15px;
 }
-nav ul a,.myname{
+
+nav ul a,
+.myname {
     text-decoration: none;
     font-weight: 600;
     font-size: 13pt;
-    color:navy;
+    color: navy;
 }
-#navlist{
+
+#navlist {
     float: right;
 }
-#navlist a:hover{
+
+#navlist a:hover {
     color: skyblue;
 }
-hr{
+
+hr {
     width: 120px;
 }
-#welcome_text{
+
+#welcome_text {
     font-size: 16pt;
 }
-#home{
+
+#home {
     text-align: center;
     margin-top: 150px;
     margin-bottom: 100px;
 }
-.profilePhoto{
-    width: 400px;  
-    height: 400px;  
-    margin:0 auto;
+
+.profilePhoto {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
 }
-.profilePhoto img{
+
+.profilePhoto img {
     border-radius: 50%;
     width: 100%;
     height: 100%;
 }
-.intro{
+
+.intro {
     color: white;
     width: 60%;
     padding: 20px;
-    margin: auto;  
+    margin: auto;
     margin-top: 40px;
 }
-.intro h1{
+
+.intro h1 {
     font-size: 54pt;
     margin-top: 20px;
     margin-bottom: 20px;
 }
-#description{
+
+#description {
     font-size: x-large;
 }
-#portfolio{
+
+#portfolio {
     color: white;
     padding-bottom: 100px;
 }
-.projects{
+
+.projects {
     margin: auto;
     display: flex;
     width: 80%;
 }
-.project{
+
+.project {
     box-shadow: 0px 0px 5px whitesmoke;
     text-align: left;
     flex: 1;
     padding: 10px;
+    padding-bottom: 35px;
     margin: 5px;
+    position: relative;
 }
-#about{
+
+#viewLink, #viewLink:hover, #viewLink:visited {
+    color: white;
+    border: 1px solid;
+    padding: 8px;
+    text-decoration: none;
+    position: absolute;
+    padding-top: 10px;
+    font-weight: 600;
+    bottom: 2px;
+}
+
+#about {
     display: flex;
     margin: 0 auto;
     width: 80%;
     color: white;
     justify-content: space-between;
 }
-.aboutHead{
+
+.aboutHead {
     width: 45%;
     flex: 1;
     padding-right: 10px;
 }
-.aboutContent{
+
+.aboutContent {
     width: 55%;
     text-align: justify;
 }
-#about p{
+
+#about p {
     font-size: 13pt;
 }
-#about h1, #portfolio h1{
+
+#about h1,
+#portfolio h1 {
     font-size: 40pt;
 }
-#contact{
+
+#contact {
     padding-top: 50px;
     padding-bottom: 50px;
 }
+
 .contactImg {
     text-align: center;
     position: relative;
@@ -114,6 +152,7 @@ hr{
     margin-top: 20px;
     width: 100%;
 }
+
 #contact_text {
     position: absolute;
     top: 50%;
@@ -122,11 +161,14 @@ hr{
     font-size: 40pt;
     white-space: nowrap;
 }
+
 img {
-    width: 100%;    /*sets image to resize according to page size*/
+    width: 100%;
+    /*sets image to resize according to page size*/
     height: auto;
 }
-.form{
+
+.form {
     width: 970px;
     padding: 30px;
     margin: auto;
@@ -135,106 +177,133 @@ img {
     font-size: 20pt;
     color: navy;
 }
-form{
+
+form {
     padding: 20px;
     font-size: 18pt;
 }
-.alignIn{
+
+.alignIn {
     display: flex;
     justify-content: space-between;
-    }
-label{
+}
+
+label {
     display: block;
     text-align: left;
-    padding-top:5px ;
-    padding-bottom:5px ;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
-#name, #email,#message, #btn{
+
+#name,
+#email,
+#message,
+#btn {
     width: 100%;
     height: 50px;
     box-sizing: border-box;
     border-radius: 4px;
     margin-top: 7px;
 }
-#message{
+
+#message {
     height: 150px;
 }
-#f1{
+
+#f1 {
     flex: 1;
     padding: 2px;
     text-align: left;
 }
-#btn{
+
+#btn {
     margin-right: 10px;
     background-color: navy;
     color: white;
     font-size: 12pt;
 }
-#buttons{
+
+#buttons {
     width: 60%;
 }
-@media screen and (min-width:850px){
-    header{
+
+@media screen and (min-width:850px) {
+    header {
         padding-top: 15px;
         padding-bottom: 15px;
     }
-    #navlist a,.myname{
+
+    #navlist a,
+    .myname {
         font-size: 16pt;
     }
-    #buttons{
+
+    #buttons {
         width: 65%;
     }
 }
-@media screen and (max-width: 1000px){
-    .projects{
+
+@media screen and (max-width: 1000px) {
+    .projects {
         margin: auto;
         display: flex;
         flex-direction: column;
         width: 80%;
     }
-    #about{
+
+    #about {
         flex-direction: column;
     }
-    .aboutHead{
+
+    .aboutHead {
         width: 100%;
     }
-    .aboutContent{
+
+    .aboutContent {
         width: 100%;
         text-align: justify;
     }
 }
+
 @media screen and (max-width: 1200px) {
-    .profilePhoto{
-        width: 300px;  
-        height: 300px;  
-        margin:0 auto;
+    .profilePhoto {
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
     }
-    .intro h1{
+
+    .intro h1 {
         font-size: 40pt;
     }
-    .form{
-        width: 80%; 
+
+    .form {
+        width: 80%;
         margin: auto;
         padding: 30px;
     }
-    #buttons{
+
+    #buttons {
         width: 70%;
     }
 }
+
 @media screen and (max-width: 700px) {
-    #navlist a,.myname{
+
+    #navlist a,
+    .myname {
         font-size: 12pt;
     }
-    nav li{
+
+    nav li {
         padding: 10px;
     }
-    .form{
-        width: 85%; 
+
+    .form {
+        width: 85%;
         margin: auto;
     }
-    #buttons{
+
+    #buttons {
         width: 70%;
     }
 }
-
-
