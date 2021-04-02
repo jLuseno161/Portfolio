@@ -65,6 +65,28 @@ hr{
 #description{
     font-size: x-large;
 }
+#about{
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    color: white;
+    justify-content: space-between;
+}
+.aboutHead{
+    width: 45%;
+    flex: 1;
+    padding-right: 10px;
+}
+.aboutContent{
+    width: 55%;
+    text-align: justify;
+}
+#about p{
+    font-size: 13pt;
+}
+#about h1{
+    font-size: 40pt;
+}
 #contact{
     padding-top: 50px;
     padding-bottom: 50px;
