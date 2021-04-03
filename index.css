@@ -99,7 +99,7 @@ hr {
 
 #portfolio {
     padding-bottom: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     background-color: white;
 }
 
@@ -141,7 +141,7 @@ hr {
 
 #about {
     background-color: rgb(231, 247, 245);
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 #abt_indiv {
@@ -180,39 +180,6 @@ hr {
     font-weight: 700;
     color: coral;
 }
-
-/* 
-#contact {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    margin-top: 100px;
-}
-
-.contactImg {
-    text-align: center;
-    position: relative;
-    color: white;
-    margin-top: 20px;
-    width: 100%;
-} 
-
-#contact_text {
-    
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 40pt;
-    white-space: nowrap;
-}
-
-img {
-    width: 100%;
-    /*sets image to resize according to page size
-    height: auto;
-} 
-*/
-
 .form {
     width: 970px;
     padding: 30px;
@@ -224,7 +191,7 @@ img {
     color: darkcyan;
 }
 
-.form h1 { 
+.form h1 {
     color: coral;
 }
 
@@ -270,6 +237,7 @@ label {
 }
 
 #btn {
+    width: 60%;
     margin-right: 10px;
     background-color: coral;
     color: white;
@@ -278,7 +246,8 @@ label {
 }
 
 #buttons {
-    width: 60%;
+    width: 50%;
+    text-align: left;
 }
 
 footer {
@@ -316,9 +285,11 @@ footer {
     }
 
     #abt_indiv {
+        width: 90%;
         flex-direction: column;
+        padding: 2px;
+        padding-bottom: 60px;
     }
-
     .aboutHead {
         width: 100%;
     }
@@ -349,6 +320,10 @@ footer {
     #buttons {
         width: 70%;
     }
+    .form h1 {
+        color: coral;
+        margin-top: 2px;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -359,7 +334,7 @@ footer {
     }
 
     nav li {
-        padding: 10px;
+        padding: 5px;
     }
 
     .form {
