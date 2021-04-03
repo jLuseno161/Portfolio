@@ -32,7 +32,7 @@ To acces this project, you need to clone it using these steps;
 3. Git
 
 ### Live Site
-View [live](https://jluseno161.github.io/portfolio/)
+View [live](https://jluseno161.github.io/Portfolio/)
 
 ### Licence
 This project is under the  [MIT](LICENSE) licence:<br>
