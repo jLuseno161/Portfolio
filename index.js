@@ -1,14 +1,6 @@
 window.onload = function () {
-
-    var names = document.forms["sendMessage"]["name"].value;
-
-    var email = document.getElementById('email');
-    var message = document.getElementById('message');
-
     document.getElementById('btn').addEventListener('click', function () {
         validate()
-
-
     });
 
     function validate() {
@@ -19,7 +11,7 @@ window.onload = function () {
         dotposition = email.lastIndexOf(".");
 
         if (email == "" || names == "" || message == "") {
-            alert("Please fill out all the fields");
+            alert("Please fill out all fields");
             return false;
         } else if (atposition < 1 || (dotposition - atposition < 2)) {
             alert("Please enter correct email")
@@ -27,9 +19,11 @@ window.onload = function () {
             return false;
         } else if (names.length < 3 || names.length > 35 || names.match(/^[0-9]+$/)) {
             alert("Please enter correct name");
+            names.focus();
             return false;
         } else {
-            alert('everthing seems pretty cool')
+            alert('Message Sent')
+            reset();
         }
         return true;
     }
@@ -37,4 +31,6 @@ window.onload = function () {
     function reset() {
         location.reload();
     }
+
+
 }
