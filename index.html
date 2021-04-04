@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="index.css">
+    <script type="text/javascript" src="index.js"></script>
     <!--Icon library-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
@@ -172,20 +173,20 @@
     <section id="contact">
         <div class="form">
             <h1>Want to know more?</h1>
-            <form action="">
+            <form action="" name="sendMessage" >
                 <div id="inputFields" class="alignIn">
                     <div id="f1">
                         <label for="name">Name</label>
-                        <input type="text" id="name">
+                        <input type="text" id="name" name="name">
                     </div>
                     <div id="f1">
                         <label for="email">Email</label>
-                        <input type="email" id="email">
+                        <input type="email" id="email" name="email" required>
                     </div>
                 </div>
                 <div id="inputFields">
                     <label for="">Message</label>
-                    <textarea id="message"></textarea>
+                    <textarea id="message" placeholder="Write message here..." name="message"></textarea>
                 </div>
                 <div id="buttons">
                     <input type="button" value="SEND MESSAGE" id="btn">
